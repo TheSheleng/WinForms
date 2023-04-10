@@ -66,6 +66,10 @@
             this.ButtonPay = new System.Windows.Forms.Button();
             this.LablePayPrice = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.NextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ClearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GroupeRefueling.SuspendLayout();
             this.GroupeRefuelingPay.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -73,6 +77,7 @@
             this.GroupeCafePay.SuspendLayout();
             this.GroupePay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ComboPetrol
@@ -102,7 +107,7 @@
             this.GroupeRefueling.Controls.Add(this.LablePetrol);
             this.GroupeRefueling.Controls.Add(this.ComboPetrol);
             this.GroupeRefueling.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupeRefueling.Location = new System.Drawing.Point(12, 12);
+            this.GroupeRefueling.Location = new System.Drawing.Point(12, 27);
             this.GroupeRefueling.Name = "GroupeRefueling";
             this.GroupeRefueling.Size = new System.Drawing.Size(370, 421);
             this.GroupeRefueling.TabIndex = 2;
@@ -189,7 +194,7 @@
             this.TextBoxPrice.Size = new System.Drawing.Size(84, 35);
             this.TextBoxPrice.TabIndex = 6;
             this.TextBoxPrice.ValidatingType = typeof(int);
-            this.TextBoxPrice.Leave += new System.EventHandler(this.TextBoxPrice_Leave);
+            this.TextBoxPrice.TextChanged += new System.EventHandler(this.TextBoxPrice_TextChanged_1);
             // 
             // TextBoxCount
             // 
@@ -199,7 +204,7 @@
             this.TextBoxCount.Size = new System.Drawing.Size(84, 35);
             this.TextBoxCount.TabIndex = 5;
             this.TextBoxCount.ValidatingType = typeof(int);
-            this.TextBoxCount.Leave += new System.EventHandler(this.TextBoxCount_Leave);
+            this.TextBoxCount.TextChanged += new System.EventHandler(this.TextBoxCount_TextChanged_1);
             // 
             // RadioPrice
             // 
@@ -252,7 +257,7 @@
             this.GroupeCafe.Controls.Add(this.CheckFood1);
             this.GroupeCafe.Controls.Add(this.GroupeCafePay);
             this.GroupeCafe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupeCafe.Location = new System.Drawing.Point(388, 12);
+            this.GroupeCafe.Location = new System.Drawing.Point(388, 27);
             this.GroupeCafe.Name = "GroupeCafe";
             this.GroupeCafe.Size = new System.Drawing.Size(370, 421);
             this.GroupeCafe.TabIndex = 5;
@@ -441,7 +446,7 @@
             this.GroupePay.Controls.Add(this.LablePayPrice);
             this.GroupePay.Controls.Add(this.pictureBox1);
             this.GroupePay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupePay.Location = new System.Drawing.Point(12, 439);
+            this.GroupePay.Location = new System.Drawing.Point(12, 454);
             this.GroupePay.Name = "GroupePay";
             this.GroupePay.Size = new System.Drawing.Size(746, 214);
             this.GroupePay.TabIndex = 6;
@@ -465,6 +470,7 @@
             this.ButtonPay.TabIndex = 1;
             this.ButtonPay.Text = "Подсчитать";
             this.ButtonPay.UseVisualStyleBackColor = true;
+            this.ButtonPay.Click += new System.EventHandler(this.ButtonPay_Click);
             // 
             // LablePayPrice
             // 
@@ -485,15 +491,52 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.NextToolStripMenuItem,
+            this.ClearToolStripMenuItem,
+            this.ExitToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(768, 33);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // NextToolStripMenuItem
+            // 
+            this.NextToolStripMenuItem.Name = "NextToolStripMenuItem";
+            this.NextToolStripMenuItem.Size = new System.Drawing.Size(64, 29);
+            this.NextToolStripMenuItem.Text = "Next";
+            this.NextToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
+            // 
+            // ClearToolStripMenuItem
+            // 
+            this.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem";
+            this.ClearToolStripMenuItem.Size = new System.Drawing.Size(67, 29);
+            this.ClearToolStripMenuItem.Text = "Clear";
+            this.ClearToolStripMenuItem.Click += new System.EventHandler(this.ClearToolStripMenuItem_Click);
+            // 
+            // ExitToolStripMenuItem
+            // 
+            this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(55, 29);
+            this.ExitToolStripMenuItem.Text = "Exit";
+            this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
+            // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 664);
+            this.ClientSize = new System.Drawing.Size(768, 678);
             this.Controls.Add(this.GroupePay);
             this.Controls.Add(this.GroupeCafe);
             this.Controls.Add(this.GroupeRefueling);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form";
             this.Text = "BestOil";
             this.GroupeRefueling.ResumeLayout(false);
@@ -509,7 +552,10 @@
             this.GroupePay.ResumeLayout(false);
             this.GroupePay.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -553,6 +599,10 @@
         private System.Windows.Forms.Label LableFoodPrice;
         private System.Windows.Forms.Label LableFoodCount;
         private System.Windows.Forms.TextBox ComboPrice;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem NextToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ClearToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem;
     }
 }
 

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,49 @@ namespace BestOil
     public partial class Form : System.Windows.Forms.Form
     {
         SortedDictionary<string, int> FuelPrice = new SortedDictionary<string, int>();
+
+        private void Close()
+        {
+            this.Dispose(true);
+        }
+        private void Next()
+        {
+            this.Save();
+            this.Clear();
+        }
+        int ClientNum = 1;
+        private void Save()
+        {
+            string path = $"..\\Checks\\{ClientNum++}.txt";
+            if (!File.Exists(path))
+            {
+                using (StreamWriter sw = File.CreateText(path))
+                {
+                    sw.WriteLine($"Oil type: {this.ComboPetrol.Text}");
+                    sw.WriteLine($"Oil count: {this.TextBoxCount.Text}");
+                    sw.WriteLine($"Oil price: {this.TextBoxPrice.Text}");
+
+                    sw.WriteLine($"Hot Dogs: {this.MaskedFood1.Text}");
+                    sw.WriteLine($"Hamburgers: {this.MaskedFood2.Text}");
+                    sw.WriteLine($"French fries: {this.MaskedFood3.Text}");
+                    sw.WriteLine($"Coca Cola: {this.MaskedFood4.Text}");
+
+                    sw.WriteLine($"To pay: {this.LablePayPrice.Text}");
+                }
+            }
+        }
+        private void Clear()
+        {
+            this.ComboPetrol.SelectedText = string.Empty;
+            this.ComboPrice.Text = string.Empty;
+            this.TextBoxCount.Text = string.Empty;
+            this.LableRefuelingPrice.Text = "0,0";
+            this.CheckFood1.Checked = false;
+            this.CheckFood2.Checked = false;
+            this.CheckFood3.Checked = false;
+            this.CheckFood4.Checked = false;
+        }
+
         public Form()
         {
             InitializeComponent();
@@ -51,26 +95,6 @@ namespace BestOil
             this.LablePayPrice.Text = (Convert.ToDouble(this.LableRefuelingPrice.Text) + Convert.ToDouble(this.LableCafePrice.Text)).ToString();
         }
 
-        private void TextBoxPrice_Leave(object sender, EventArgs e)
-        {
-            if (this.TextBoxPrice.Text == "   ,") this.TextBoxCount.Text = "00000";
-            else
-            {
-                this.TextBoxCount.Text = (FuelPrice[ComboPetrol.SelectedItem.ToString()] / Convert.ToDouble(this.TextBoxPrice.Text)).ToString();
-                this.LableRefuelingPrice.Text = this.TextBoxPrice.Text;
-            }
-        }
-
-        private void TextBoxCount_Leave(object sender, EventArgs e)
-        {
-            if (this.TextBoxCount.Text == "   ,") this.TextBoxPrice.Text = "00000";
-            else
-            {
-                this.TextBoxPrice.Text = (Convert.ToDouble(this.TextBoxCount.Text) * FuelPrice[ComboPetrol.SelectedItem.ToString()]).ToString();
-                this.LableRefuelingPrice.Text = this.TextBoxPrice.Text;
-            }
-        }
-
         private void CheckFood1_CheckedChanged(object sender, EventArgs e)
         {
             if(MaskedFood1.ReadOnly = !this.CheckFood1.Checked) MaskedFood1.Text = "";
@@ -98,6 +122,48 @@ namespace BestOil
             if (MaskedFood3.Text != "") res += Convert.ToDouble(MaskedFood3.Text) * Convert.ToDouble(this.TextBoxFood3.Text);
             if (MaskedFood4.Text != "") res += Convert.ToDouble(MaskedFood4.Text) * Convert.ToDouble(this.TextBoxFood4.Text);
             this.LableCafePrice.Text = res.ToString();
+        }
+
+        private void TextBoxPrice_TextChanged_1(object sender, EventArgs e)
+        {
+            if (this.RadioCount.Checked) return;
+            if (this.TextBoxPrice.Text == "   ,") this.TextBoxCount.Text = "     ";
+            else
+            {
+                this.TextBoxPrice.Text = (Convert.ToDouble(this.TextBoxCount.Text) / 100 * FuelPrice[ComboPetrol.SelectedItem.ToString()]).ToString();
+                this.LableRefuelingPrice.Text = this.TextBoxPrice.Text;
+            }
+        }
+
+        private void TextBoxCount_TextChanged_1(object sender, EventArgs e)
+        {
+            if (this.RadioPrice.Checked) return;
+            if (this.TextBoxCount.Text == "   ,") this.TextBoxPrice.Text = "     ";
+            else
+            {
+                this.TextBoxPrice.Text = (Convert.ToDouble(this.TextBoxCount.Text) / 100 * FuelPrice[ComboPetrol.SelectedItem.ToString()]).ToString();
+                this.LableRefuelingPrice.Text = this.TextBoxPrice.Text;
+            }
+        }
+
+        private void NextToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ClearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Clear();
+        }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Next();
+        }
+
+        private void ButtonPay_Click(object sender, EventArgs e)
+        {
+            this.Next();
         }
     }
 }
