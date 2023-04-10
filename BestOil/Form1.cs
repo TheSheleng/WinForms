@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BestOil
 {
@@ -69,6 +70,7 @@ namespace BestOil
             FuelPrice.Add("Gas", 22);
 
             this.ComboPetrol.Items.AddRange(FuelPrice.Keys.ToArray());
+            this.ContextMenuStrip = contextMenuStrip1;
         }
         private void ComboPetrol_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -164,6 +166,21 @@ namespace BestOil
         private void ButtonPay_Click(object sender, EventArgs e)
         {
             this.Next();
+        }
+
+        private void nextToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Next();
+        }
+
+        private void clearToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Clear();
+        }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
