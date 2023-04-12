@@ -1,6 +1,6 @@
 ﻿namespace _12._04._2023_Task1
 {
-    partial class Form1
+    partial class Form
     {
         /// <summary>
         /// Required designer variable.
@@ -71,7 +71,7 @@
             this.textBox.Size = new System.Drawing.Size(240, 26);
             this.textBox.TabIndex = 4;
             // 
-            // Form1
+            // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -80,7 +80,7 @@
             this.Controls.Add(this.clear);
             this.Controls.Add(this.listBox);
             this.Controls.Add(this.search);
-            this.Name = "Form1";
+            this.Name = "Form";
             this.Text = "FileSerch";
             this.ResumeLayout(false);
             this.PerformLayout();
