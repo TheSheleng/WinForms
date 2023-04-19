@@ -47,8 +47,7 @@ namespace WhoWantToBeAMillionaire
 
         private void addQToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
-            form.Show();
+            
         }
 
         private void DelQToolStripMenuItem_Click(object sender, EventArgs e)
