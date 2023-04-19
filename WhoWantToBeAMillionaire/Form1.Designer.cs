@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem31 = new System.Windows.Forms.ListViewItem(new string[] {
             "          15 - 1 000 000"}, -1, System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))), System.Drawing.Color.Empty, null);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("          14 - 500 000");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("          13 - 250 000");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("          12 - 125 000");
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("          11 - 64 000");
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem32 = new System.Windows.Forms.ListViewItem("          14 - 500 000");
+            System.Windows.Forms.ListViewItem listViewItem33 = new System.Windows.Forms.ListViewItem("          13 - 250 000");
+            System.Windows.Forms.ListViewItem listViewItem34 = new System.Windows.Forms.ListViewItem("          12 - 125 000");
+            System.Windows.Forms.ListViewItem listViewItem35 = new System.Windows.Forms.ListViewItem("          11 - 64 000");
+            System.Windows.Forms.ListViewItem listViewItem36 = new System.Windows.Forms.ListViewItem(new string[] {
             "          10 - 32 000"}, -1, System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))), System.Drawing.Color.Empty, null);
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("           9 - 16 000");
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("           8 - 8 000");
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("           7 - 4 000");
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("           6 - 2 000");
-            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem37 = new System.Windows.Forms.ListViewItem("           9 - 16 000");
+            System.Windows.Forms.ListViewItem listViewItem38 = new System.Windows.Forms.ListViewItem("           8 - 8 000");
+            System.Windows.Forms.ListViewItem listViewItem39 = new System.Windows.Forms.ListViewItem("           7 - 4 000");
+            System.Windows.Forms.ListViewItem listViewItem40 = new System.Windows.Forms.ListViewItem("           6 - 2 000");
+            System.Windows.Forms.ListViewItem listViewItem41 = new System.Windows.Forms.ListViewItem(new string[] {
             "           5 - 1 000"}, -1, System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))), System.Drawing.Color.Empty, null);
-            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("           4 - 500");
-            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("           3 - 300");
-            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("           2 - 200");
-            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("           1 - 100");
+            System.Windows.Forms.ListViewItem listViewItem42 = new System.Windows.Forms.ListViewItem("           4 - 500");
+            System.Windows.Forms.ListViewItem listViewItem43 = new System.Windows.Forms.ListViewItem("           3 - 300");
+            System.Windows.Forms.ListViewItem listViewItem44 = new System.Windows.Forms.ListViewItem("           2 - 200");
+            System.Windows.Forms.ListViewItem listViewItem45 = new System.Windows.Forms.ListViewItem("           1 - 100");
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.играToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.администраторскийРежимToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.оПрограмеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.выбратьНаборToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.завершитьИгруToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.добавитьВопросToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.удалитьВопросToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.редактироватьВопросToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.StartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EndToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DelQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -64,9 +64,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
@@ -74,9 +74,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -84,69 +84,72 @@
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.играToolStripMenuItem,
-            this.администраторскийРежимToolStripMenuItem,
-            this.оПрограмеToolStripMenuItem});
+            this.gameToolStripMenuItem,
+            this.adminToolStripMenuItem,
+            this.AboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1502, 33);
             this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Text = "menuStrip";
             // 
-            // играToolStripMenuItem
+            // gameToolStripMenuItem
             // 
-            this.играToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.выбратьНаборToolStripMenuItem,
-            this.завершитьИгруToolStripMenuItem});
-            this.играToolStripMenuItem.Name = "играToolStripMenuItem";
-            this.играToolStripMenuItem.Size = new System.Drawing.Size(68, 29);
-            this.играToolStripMenuItem.Text = "Игра";
+            this.gameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StartToolStripMenuItem,
+            this.EndToolStripMenuItem});
+            this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(68, 29);
+            this.gameToolStripMenuItem.Text = "Игра";
             // 
-            // администраторскийРежимToolStripMenuItem
+            // StartToolStripMenuItem
             // 
-            this.администраторскийРежимToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.добавитьВопросToolStripMenuItem,
-            this.удалитьВопросToolStripMenuItem,
-            this.редактироватьВопросToolStripMenuItem});
-            this.администраторскийРежимToolStripMenuItem.Name = "администраторскийРежимToolStripMenuItem";
-            this.администраторскийРежимToolStripMenuItem.Size = new System.Drawing.Size(255, 29);
-            this.администраторскийРежимToolStripMenuItem.Text = "Администраторский режим";
+            this.StartToolStripMenuItem.Name = "StartToolStripMenuItem";
+            this.StartToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.StartToolStripMenuItem.Text = "Начать игру";
             // 
-            // оПрограмеToolStripMenuItem
+            // EndToolStripMenuItem
             // 
-            this.оПрограмеToolStripMenuItem.Name = "оПрограмеToolStripMenuItem";
-            this.оПрограмеToolStripMenuItem.Size = new System.Drawing.Size(128, 29);
-            this.оПрограмеToolStripMenuItem.Text = "О програме";
+            this.EndToolStripMenuItem.Name = "EndToolStripMenuItem";
+            this.EndToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.EndToolStripMenuItem.Text = "Завершить игру";
             // 
-            // выбратьНаборToolStripMenuItem
+            // adminToolStripMenuItem
             // 
-            this.выбратьНаборToolStripMenuItem.Name = "выбратьНаборToolStripMenuItem";
-            this.выбратьНаборToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.выбратьНаборToolStripMenuItem.Text = "Выбрать набор";
+            this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addQToolStripMenuItem,
+            this.DelQToolStripMenuItem,
+            this.changeQToolStripMenuItem});
+            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(255, 29);
+            this.adminToolStripMenuItem.Text = "Администраторский режим";
             // 
-            // завершитьИгруToolStripMenuItem
+            // addQToolStripMenuItem
             // 
-            this.завершитьИгруToolStripMenuItem.Name = "завершитьИгруToolStripMenuItem";
-            this.завершитьИгруToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.завершитьИгруToolStripMenuItem.Text = "Завершить игру";
+            this.addQToolStripMenuItem.Name = "addQToolStripMenuItem";
+            this.addQToolStripMenuItem.Size = new System.Drawing.Size(301, 34);
+            this.addQToolStripMenuItem.Text = "Добавить вопрос";
+            this.addQToolStripMenuItem.Click += new System.EventHandler(this.addQToolStripMenuItem_Click);
             // 
-            // добавитьВопросToolStripMenuItem
+            // DelQToolStripMenuItem
             // 
-            this.добавитьВопросToolStripMenuItem.Name = "добавитьВопросToolStripMenuItem";
-            this.добавитьВопросToolStripMenuItem.Size = new System.Drawing.Size(301, 34);
-            this.добавитьВопросToolStripMenuItem.Text = "Добавить вопрос";
+            this.DelQToolStripMenuItem.Name = "DelQToolStripMenuItem";
+            this.DelQToolStripMenuItem.Size = new System.Drawing.Size(301, 34);
+            this.DelQToolStripMenuItem.Text = "Удалить вопрос";
+            this.DelQToolStripMenuItem.Click += new System.EventHandler(this.DelQToolStripMenuItem_Click);
             // 
-            // удалитьВопросToolStripMenuItem
+            // changeQToolStripMenuItem
             // 
-            this.удалитьВопросToolStripMenuItem.Name = "удалитьВопросToolStripMenuItem";
-            this.удалитьВопросToolStripMenuItem.Size = new System.Drawing.Size(301, 34);
-            this.удалитьВопросToolStripMenuItem.Text = "Удалить вопрос";
+            this.changeQToolStripMenuItem.Name = "changeQToolStripMenuItem";
+            this.changeQToolStripMenuItem.Size = new System.Drawing.Size(301, 34);
+            this.changeQToolStripMenuItem.Text = "Редактировать вопрос";
+            this.changeQToolStripMenuItem.Click += new System.EventHandler(this.changeQToolStripMenuItem_Click);
             // 
-            // редактироватьВопросToolStripMenuItem
+            // AboutToolStripMenuItem
             // 
-            this.редактироватьВопросToolStripMenuItem.Name = "редактироватьВопросToolStripMenuItem";
-            this.редактироватьВопросToolStripMenuItem.Size = new System.Drawing.Size(301, 34);
-            this.редактироватьВопросToolStripMenuItem.Text = "Редактировать вопрос";
+            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(128, 29);
+            this.AboutToolStripMenuItem.Text = "О програме";
             // 
             // pictureBox1
             // 
@@ -189,7 +192,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(776, 140);
             this.label1.TabIndex = 6;
-            this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
@@ -202,7 +204,6 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(372, 88);
             this.button1.TabIndex = 7;
-            this.button1.Text = "A:";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -216,7 +217,6 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(372, 88);
             this.button2.TabIndex = 8;
-            this.button2.Text = "B:";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -230,7 +230,6 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(372, 88);
             this.button3.TabIndex = 10;
-            this.button3.Text = "D:";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -244,7 +243,6 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(372, 88);
             this.button4.TabIndex = 9;
-            this.button4.Text = "C:";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -263,16 +261,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Подсказки";
             // 
-            // pictureBox4
+            // pictureBox6
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.WindowText;
-            this.pictureBox4.Image = global::WhoWantToBeAMillionaire.Properties.Resources._1;
-            this.pictureBox4.Location = new System.Drawing.Point(6, 34);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(94, 66);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
+            this.pictureBox6.BackColor = System.Drawing.SystemColors.WindowText;
+            this.pictureBox6.Image = global::WhoWantToBeAMillionaire.Properties.Resources._3;
+            this.pictureBox6.Location = new System.Drawing.Point(206, 34);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(94, 66);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 14;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -285,16 +283,16 @@
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox6
+            // pictureBox4
             // 
-            this.pictureBox6.BackColor = System.Drawing.SystemColors.WindowText;
-            this.pictureBox6.Image = global::WhoWantToBeAMillionaire.Properties.Resources._3;
-            this.pictureBox6.Location = new System.Drawing.Point(206, 34);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(94, 66);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 14;
-            this.pictureBox6.TabStop = false;
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.WindowText;
+            this.pictureBox4.Image = global::WhoWantToBeAMillionaire.Properties.Resources._1;
+            this.pictureBox4.Location = new System.Drawing.Point(6, 34);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(94, 66);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 12;
+            this.pictureBox4.TabStop = false;
             // 
             // listView1
             // 
@@ -302,21 +300,21 @@
             this.columnHeader1});
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4,
-            listViewItem5,
-            listViewItem6,
-            listViewItem7,
-            listViewItem8,
-            listViewItem9,
-            listViewItem10,
-            listViewItem11,
-            listViewItem12,
-            listViewItem13,
-            listViewItem14,
-            listViewItem15});
+            listViewItem31,
+            listViewItem32,
+            listViewItem33,
+            listViewItem34,
+            listViewItem35,
+            listViewItem36,
+            listViewItem37,
+            listViewItem38,
+            listViewItem39,
+            listViewItem40,
+            listViewItem41,
+            listViewItem42,
+            listViewItem43,
+            listViewItem44,
+            listViewItem45});
             this.listView1.Location = new System.Drawing.Point(1186, 142);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(316, 756);
@@ -355,9 +353,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,14 +364,14 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem играToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem администраторскийРежимToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem оПрограмеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem выбратьНаборToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem завершитьИгруToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem добавитьВопросToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem удалитьВопросToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem редактироватьВопросToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem StartToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EndToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addQToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DelQToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changeQToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
