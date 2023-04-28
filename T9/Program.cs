@@ -6,12 +6,8 @@ using System.Windows.Forms;
 
 namespace T9
 {
-    internal static class Program
+    public static class Program
     {
-        static public Form1 Form { get; private set; }
-        static public PrintModel Print { get; private set; }
-        static public CorrectModel Correct { get; private set; }
-
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -21,11 +17,10 @@ namespace T9
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Form = new Form1();
-            Print = new PrintModel();
-            Correct = new CorrectModel();
+            //MessageBox.Show($"{LevenshteinDistance.Find("test", "test")}");
 
-            Application.Run(Form);
+            Controller controler = new Controller(new MainForm(), new Model("Dictionary.txt"));
+            controler.RunView();
         }
     }
 }
